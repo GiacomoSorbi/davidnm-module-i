@@ -1,0 +1,186 @@
+
+body {
+  margin: 0;
+  background-color: white;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-top: 1vw;
+  padding-left: 15vw;
+  padding-bottom: 0.01vw;
+  background-color: rgb(39, 67, 117);
+
+}
+
+.cabecera {
+  margin: 0;
+  padding-top: 15px;
+  margin-left: 10vw;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s font-size linear;
+    background-color: rgb(39, 67, 117);
+
+}
+
+.cabecera:hover {
+  font-size: 31px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s font-size linear;
+}
+
+nav {
+  padding-top: 50px;
+  justify-content: space-between;
+  background-color: rgb(39, 67, 117);
+}
+
+nav > ul {
+
+  text-align: bottom;
+  display: flex;
+  list-style-type: none;
+}
+
+.botonesContenedor {
+  items-align: right;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;   
+  list-style-type: none;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;   
+  list-style-type: none;
+}
+
+nav > ul > li {
+  text-align: bottom;
+  margin: 0 1vw;
+}
+
+nav > ul > li > a {
+  text-align: left;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: whitesmoke;
+  transition: color 0.3s linear;
+}
+
+nav > ul > li > a:hover {
+  color: lightcoral;
+  transition: color 0.1s linear;
+}
+
+section{
+  padding-top: 15px;
+  padding-left: 10vw;
+  display: flex;
+  margin-left: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: bottom;
+
+}
+.sectionContenedora{
+  padding-top: 15px;
+  display: flex;
+  padding-left: 0vw;
+  flex-direction: column;
+  margin-left: 0vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: bottom;
+
+}
+.sectionContenedora2{
+  padding-top: 15px;
+  display: flex;
+  padding-left: 0vw;
+  margin-left: 0vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: bottom;
+
+}
+
+h1 {
+  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  color: rgb(39, 67, 117);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s font-size linear;
+    background-color: white;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  color: rgb(39, 67, 117);
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s font-size linear;
+    background-color: white;
+}
+h3 {
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 2vw;
+  text-align: center;
+  color: rgb(39, 67, 117);
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s font-size linear;
+    background-color: white;
+}
+
+.h3first {
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 0vw;
+  text-align: center;
+  color: rgb(39, 67, 117);
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s font-size linear;
+    background-color: white;
+}
+
+
+div{
+  display: flex;
+  flex-direction: column;   
+  padding-left: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 610px;
+  height: 300px;
+}
+
+.h2side{
+  padding-top: 18px;
+  display: flex;
+  flex-direction:row-reverse;   
+  padding-left: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 23vw;  
+  height: 30px;
+}
+
+
+.divtopflops{
+  display: flex;
+  flex-direction: column;   
+  padding-left: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 310px;
+  height: 300px;
+}
+

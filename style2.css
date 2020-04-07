@@ -1,0 +1,92 @@
+
+body {
+  margin: 0;
+  background-color: white;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-top: 1vw;
+  padding-bottom: 0.01vw;
+  background-color: green;
+
+}
+
+h1 {
+  margin: 0;
+  padding-top: 15px;
+  margin-left: 10vw;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s font-size linear;
+    background-color: green;
+
+}
+
+h1:hover {
+  font-size: 31px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s font-size linear;
+}
+
+section{
+  display: flex;
+  margin-left: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: bottom;
+
+}
+
+nav {
+  padding-top: 50px;
+  justify-content: space-between;
+  background-color: green;
+}
+
+nav > ul {
+
+  text-align: bottom;
+  display: flex;
+  list-style-type: none;
+}
+
+.botonesContenedor {
+  items-align: right;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;   
+  list-style-type: none;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;   
+  list-style-type: none;
+}
+
+nav > ul > li {
+  text-align: bottom;
+  margin: 0 1vw;
+}
+
+nav > ul > li > a {
+  text-align: left;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: whitesmoke;
+  transition: color 0.3s linear;
+}
+
+nav > ul > li > a:hover {
+  color: lightcoral;
+  transition: color 0.1s linear;
+}
+
+
+
+}
