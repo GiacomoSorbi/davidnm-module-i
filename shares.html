@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+  <html>
   <head>
     <title>Commercial Company Tool</title>
-    <link href="./style1.css" rel="stylesheet" />
+    <link id="estilos" href="./style1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+    
   </head>
   <body>
+    
     <header>
-      <h1>Commercial <br> Company Tool</h1>
+      <p class="cabecera">Commercial <br> Company Tool</p>
       <nav>
         <ul>
           <li><a href="./index.html">Markets showroom</a></li>
@@ -22,7 +29,139 @@
           <li><input id="colourBtn3" type="submit" value="Yellow"/></li>
         </ul>
       </nav>
-
-    <script src="functions.js"></script>
-
     </header>
+    <main>
+      
+      <section>
+        <h1 id="log">SHARES</h1>
+        <div class="h2sideshares">
+          <button><i class="material-icons">search</i></button>
+          <input type="search" id="site-search" name="q"
+          aria-label="Search through site content" placeholder="Enter stock name or EPIC">      
+        </div>
+      </section>
+      <section class="recuadro">
+        <div class="recuadrocabecera">
+          <p class="separador">Sell:57.92p</p>
+          <p class="separador2">|</p>
+          <p class="separador">Buy:57.94p</p>
+          <p class="separador2">|</p>
+          <p class="separador"><i class="material-icons" style="color:green; vertical-align:middle">arrow_upward</i> 0.59p (1.03%)</p>
+        </div>
+          <div class="recuadrocabecera2">
+            <p class="separador">FTSE 100: <i class="material-icons" style="color:green; vertical-align: bottom;">arrow_upward</i>1.09%</p>
+          </div>
+      </section>  
+      <section>
+        <h2>At A Glance</h2>
+      </section>  
+
+        <section class="recuadroBis">
+          <div class="recuadrocabecera">
+            <p class="separador">Sell:57.92p</p>
+            <p class="separador2">|</p>
+            <p class="separador">Buy:57.94p</p>
+            <p class="separador2">|</p>
+            <p class="separador"><i class="material-icons" style="color:green; vertical-align:middle">arrow_upward</i> 0.59p (1.03%)</p>
+          </div>
+            <div class="recuadrocabecera2">
+              <p class="separador">FTSE 100: <i class="material-icons" style="color:green; vertical-align: bottom;">arrow_upward</i>1.09%</p>
+            </div>
+      </section>
+      <section>
+        <div class="divShares" id="container"></div>
+        <table>
+          <tbody><tr>
+          <td class="align-left">FTSE 100</td>
+          <td class="align-right">5,583.50</td>
+          <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
+          <td class="align-right positive">+168.00</td>
+          <td class="align-right positive">+3.10%</td>
+          </tr>
+          <tr class="table-alt">
+          <td class="align-left">FTSE 250</td>
+          <td class="align-right">14,807.14</td>
+          <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
+          <td class="align-right positive">+707.93</td>
+          <td class="align-right positive">+5.02%</td>
+          </tr>
+          <tr>
+          <td class="align-left">FTSE 350</td>
+          <td class="align-right">3,099.04</td>
+          <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
+          <td class="align-right positive">+102.07</td>
+          <td class="align-right positive">+3.41%</td>
+          </tr>
+          <tr class="table-alt">
+          <td class="align-left">FTSE All Share</td>
+          <td class="align-right">3,058.79</td>
+          <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
+          <td class="align-right positive">+100.39</td>
+          <td class="align-right positive">+3.39%</td>
+          </tr>
+          <tr class="selected">
+          <td class="align-left">FTSE techMARK 100</td>
+          <td class="align-right">4,517.20</td>
+          <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
+          <td class="align-right positive">+157.89</td>
+          <td class="align-right positive">+3.62%</td>
+          </tr>
+          <tr class="table-alt">
+          <td class="align-left">FTSE Small Cap</td>
+          <td class="align-right">4,282.64</td>
+          <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
+          <td class="align-right positive">+136.08</td>
+          <td class="align-right positive">+3.28%</td>
+          </tr>
+          <tr class="">
+          <td class="align-left">FTSE AIM 100</td>
+          <td class="align-right">3,460.62</td>
+          <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
+          <td class="align-right positive">+112.80</td>
+          <td class="align-right positive">+3.37%</td>
+          </tr>
+          </tbody></table>  
+      </section>
+      
+      
+      
+      
+      <script language="JavaScript">
+        var parameters = location.search.substring(1);
+        var temp = parameters.split("=");
+        var l = unescape(temp[1]);
+        if(l.toString()=="undefined"){
+          l='Generic shares page'};
+          document.getElementById("log").innerHTML = l;
+        </script>
+        
+        <script>
+          Highcharts.getJSON('https://www.highcharts.com/samples/data/aapl-c.json', function (data) {
+              // Create the chart
+              Highcharts.stockChart('container', {   
+        
+        
+                  rangeSelector: {
+                      selected: 1
+                  },
+                  scrollbar: {
+                      hide: true
+                  },
+                  series: [{
+                      name: 'AAPL',
+                      data: data,
+                      tooltip: {
+                          valueDecimals: 2
+                      }
+                  }]
+              });
+          });
+        
+          </script>
+        
+        
+        <script src="functionsCssChange.js"></script>
+        
+      </body>
+      </html>
+
