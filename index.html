@@ -56,7 +56,7 @@
       <td class="align-right positive">+3.10%</td>
       </tr>
       <tr class="table-alt">
-      <td class="align-left">FTSE 250</td>
+      <td class="align-left"><a href="#" onclick="myJsFunc();">FTSE 250</a></td>
       <td class="align-right">14,807.14</td>
       <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
       <td class="align-right positive">+707.93</td>
@@ -214,6 +214,30 @@
           }]
       });
   });
+
+  function myJsFunc() {
+
+    Highcharts.getJSON('./jsonfiles/ftse250.json', function (data) {
+      // Create the chart
+      Highcharts.stockChart('container', {   
+
+
+          rangeSelector: {
+              selected: 1
+          },
+          scrollbar: {
+              hide: true
+          },
+          series: [{
+              name: 'AAPL',
+              data: data,
+              tooltip: {
+                  valueDecimals: 2
+              }
+          }]
+      });
+  });
+  }
 
   </script>
 
