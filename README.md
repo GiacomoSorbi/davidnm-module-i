@@ -1,1 +1,3 @@
-"# davidnm-module-i" 
+# davidnm-module-i
+
+`gh-pages` enabled
