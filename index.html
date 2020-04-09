@@ -49,14 +49,14 @@
   <section>
     <table>
       <tbody><tr>
-      <td class="align-left">FTSE 100</td>
+      <td class="align-left"><a href="#" onclick="myJsFunc('ftse100');">FTSE 100</a></td>
       <td class="align-right">5,583.50</td>
       <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
       <td class="align-right positive">+168.00</td>
       <td class="align-right positive">+3.10%</td>
       </tr>
       <tr class="table-alt">
-      <td class="align-left"><a href="#" onclick="myJsFunc();">FTSE 250</a></td>
+      <td class="align-left"><a href="#" onclick="myJsFunc('ftse250');">FTSE 250</a></td>
       <td class="align-right">14,807.14</td>
       <td class="change positive align-center"><i class="material-icons" style="color:green">arrow_upward</i></td>
       <td class="align-right positive">+707.93</td>
@@ -194,7 +194,7 @@
 
 
   <script>
-  Highcharts.getJSON('https://www.highcharts.com/samples/data/aapl-c.json', function (data) {
+  Highcharts.getJSON('/jsonfiles/ftse100.json', function (data) {
       // Create the chart
       Highcharts.stockChart('container', {   
 
@@ -215,9 +215,9 @@
       });
   });
 
-  function myJsFunc() {
+  function myJsFunc(param1) {
 
-    Highcharts.getJSON('./jsonfiles/ftse250.json', function (data) {
+    Highcharts.getJSON('./jsonfiles/'+param1, function (data) {
       // Create the chart
       Highcharts.stockChart('container', {   
 
