@@ -303,3 +303,22 @@ table {
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+td, tr {
+  margin-left: 2px;
+  font-size: 14px;
+  border: 1px solid rgb(190,190,190);
+  vertical-align: 0px;
+    text-align: left;
+    background-color: rgb(235,235,235);
+
+}
+
+tr td.tdbis {
+  background-color: rgb(232, 232, 232);
+}
+
+tr td.tdsecondbis {
+  background-color: rgba(17, 58, 243, 0.596);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
