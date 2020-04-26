@@ -196,7 +196,7 @@ div{
   flex-direction: column;   
   padding-left: 0vw;
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 610px;
+  min-width: 0px;
   height: auto;
 }
 
@@ -275,14 +275,23 @@ div{
   display: flex;
   flex-direction:column;   
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 23vw;
+  min-width: 12vw;
   height: 30px;
 }
 
-.search{
-  width: 2vw;
+.buscador{
   height: 30px;
+  width: 12vw;
+}
 
+.row{
+  display: flex;
+  flex-direction: column;   
+  padding-left: 0vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 12vw;
+  height: 30px;
+  background-color: darkgray;
 }
 
 .h2sideshares{
