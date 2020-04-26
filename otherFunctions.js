@@ -1,5 +1,5 @@
-//Get Countries From Json File
-const searchcountry = async searchBox => {
+//Get Companies From Json File
+const searchCompany = async searchBox => {
   const res = await fetch('./jsonfiles/companies.json');
   const companies = await res.json();
 
@@ -27,12 +27,12 @@ const outputHtml = fits => {
      <div class="col s12">
        <div class="card  grey darken-4 darken-1">
          <div class="card-content white-text">
-           <h4 class="card-title m1">${fit.name} (${
-          fit.abbr
-        })<span class="blue-text m-4"> ${fit.capital}</span></h4>
+           <h4 class="card-title m1">${fit.Company_Name} (${
+          fit.Company_Market_Cap
+        })<span class="blue-text m-4"> ${fit.Country_of_Incorporation}</span></h4>
         <div class="card-action">
         <a>Country Code :</a>
-        <a>${fit.phoneCode}</a>
+        <a>${fit.Market}</a>
       </div>
          </div>
        </div>
@@ -48,4 +48,4 @@ const outputHtml = fits => {
 
 document
   .getElementById('search')
-  .addEventListener('input', () => searchcountry(search.value));
+  .addEventListener('input', () => searchCompany(search.value));
