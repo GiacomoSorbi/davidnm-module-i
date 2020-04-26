@@ -191,6 +191,15 @@ div{
   height: 300px;
 }
 
+.companyList{
+  display: flex;
+  flex-direction: column;   
+  padding-left: 0vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 610px;
+  height: auto;
+}
+
 .divShares{
   display: flex;
   flex-direction: column;   
@@ -268,6 +277,12 @@ div{
   font-family: Arial, Helvetica, sans-serif;
   min-width: 23vw;
   height: 30px;
+}
+
+.search{
+  width: 2vw;
+  height: 30px;
+
 }
 
 .h2sideshares{
