@@ -57,7 +57,7 @@ const searchCompany = async searchBox => {
   
     if (searchBox.length === 0) {
       fits = [];
-      document.getElementById('countryList').innerHTML = '';
+      document.getElementById('companyList').innerHTML = '';
     }
   
     outputHtml(fits);
@@ -74,7 +74,7 @@ const searchCompany = async searchBox => {
        `
         )
         .join('');
-  
+      document.getElementById('companyList').innerHTML = '';
       document.getElementById('companyList').innerHTML = html;
     }
   };
