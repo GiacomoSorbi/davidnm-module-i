@@ -29,6 +29,7 @@ header{
 
 
 nav {
+  padding-left: 7vw;
   padding-top: 50px;
   justify-content: space-between;
   background-color: rgb(39, 67, 117);
@@ -44,7 +45,7 @@ nav > ul {
 
 .botonesContenedor {
 
-  padding-left: 20vw;
+  padding-left: 13vw;
   padding-top: 10px;
   display: flex;
   flex-direction: column;   
