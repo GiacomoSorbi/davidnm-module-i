@@ -1,17 +1,17 @@
 //Get Countries From Json File
 const searchcountry = async searchBox => {
   const res = await fetch('./jsonfiles/companies.json');
-  const countries = await res.json();
+  const companies = await res.json();
 
   //Get Entered Data
-  let fits = countries.filter(country => {
+  let fits = companies.filter(company => {
     const regex = new RegExp(`^${searchBox}`, 'gi');
-    return country.name.match(regex) || country.abbr.match(regex);
+    return company.Company_Name.match(regex) || company.abbr.match(regex);
   });
 
   if (searchBox.length === 0) {
     fits = [];
-    countryList.innerHTML = '';
+    companyList.innerHTML = '';
   }
 
   outputHtml(fits);
@@ -42,7 +42,7 @@ const outputHtml = fits => {
       )
       .join('');
 
-    document.getElementById('countryList').innerHTML = html;
+    document.getElementById('companyList').innerHTML = html;
   }
 };
 

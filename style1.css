@@ -27,17 +27,13 @@ header{
 
 }
 
-.cabecera:hover {
-  font-size: 31px;
-  font-family: Arial, Helvetica, sans-serif;
-  transition: 0.5s font-size linear;
-}
 
 nav {
   padding-top: 50px;
   justify-content: space-between;
   background-color: rgb(39, 67, 117);
 }
+
 
 nav > ul {
 
@@ -47,7 +43,8 @@ nav > ul {
 }
 
 .botonesContenedor {
-  items-align: right;
+
+  padding-left: 20vw;
   padding-top: 10px;
   display: flex;
   flex-direction: column;   
@@ -76,8 +73,9 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
+  font-size: 13px;
   color: lightcoral;
-  transition: color 0.1s linear;
+  transition: color 0.5s linear;
 }
 
 section{
