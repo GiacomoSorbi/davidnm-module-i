@@ -188,6 +188,20 @@
     </section>
   </section>
   </section>
+<section id="prueba">
+  <div class="row container">
+    <div class="input-field col s6">
+      <h5 class="center-align">
+        <i class="small material-icons">flag</i>Select A Country
+      </h5>
+      <input placeholder="e.g Nigeria" id="search" type="text" class="validate" />
+    </div>
+  </div>
+  <div id="countryList"></div>
+
+</section>
+
+
 
   </main>
 
@@ -206,7 +220,7 @@
               hide: true
           },
           series: [{
-              name: 'AAPL',
+              name: 'ftse100',
               data: data,
               tooltip: {
                   valueDecimals: 2
@@ -229,7 +243,7 @@
               hide: true
           },
           series: [{
-              name: 'AAPL',
+              name: param1,
               data: data,
               tooltip: {
                   valueDecimals: 2
@@ -241,7 +255,10 @@
 
   </script>
 
+
+
   <script src="functionsCssChange.js"></script>
+  <script src="OtherFunctions.js"></script>
 
     </body>
   </html>
