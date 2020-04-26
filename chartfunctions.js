@@ -48,11 +48,11 @@ const searchCompany = async searchBox => {
     const res = await fetch('./jsonfiles/companies.json');
     const companies = await res.json();
     console.log(companies);
-    
+
     //Get Entered Data
     let fits = companies.filter(company => {
       const regex = new RegExp(`^${searchBox}`, 'gi');
-      return company.Company_Name.match(regex) || company.abbr.match(regex);
+      return company.Company_Name.match(regex);
     });
   
     if (searchBox.length === 0) {
