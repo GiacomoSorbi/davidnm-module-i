@@ -171,7 +171,6 @@ if(param1=="uk"){
 const searchCompany = async searchBox => {
     const res = await fetch('./jsonfiles/companies.json');
     const companies = await res.json();
-    console.log(companies);
 
     //Get Entered Data
     let fits = companies.filter(company => {
@@ -189,7 +188,7 @@ const searchCompany = async searchBox => {
   
   // show results in HTML
   const outputHtml = fits => {
-    if (fits.length > 0) {
+    if (fits.length > 0 && fits.length < 10) {
       const html = fits.map(
           fit => `
        <div class="row">
