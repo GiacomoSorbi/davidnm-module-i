@@ -296,7 +296,9 @@ div{
   min-width:234px;
   width: 5vw;
   height: 10.5px;
-  background-color: rgb(219, 206, 206);
+  background-color: rgb(39, 67, 117);
+  color: whitesmoke;
+
 }
 a {
   text-decoration: none;
@@ -341,6 +343,7 @@ table {
   letter-spacing: 1px;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
+  transition-duration: 3s;
 }
 td, tr {
   margin-left: 2px;
