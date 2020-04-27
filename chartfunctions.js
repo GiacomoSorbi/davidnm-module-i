@@ -188,7 +188,8 @@ const searchCompany = async searchBox => {
   
   // show results in HTML
   const outputHtml = fits => {
-    if (fits.length > 0 && fits.length < 10) {
+    if (fits.length > 0) {
+        fits=fits.slice(0, 9);
       const html = fits.map(
           fit => `
        <div class="row">
