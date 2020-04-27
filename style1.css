@@ -45,7 +45,7 @@ nav > ul {
 
 .botonesContenedor {
 
-  padding-left: 13vw;
+  padding-left: 11vw;
   padding-top: 10px;
   display: flex;
   flex-direction: column;   
@@ -57,6 +57,84 @@ nav > ul {
   flex-direction: column;   
   list-style-type: none;
 }
+
+.botonAzul {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #154682;
+  width: 5vw;
+}
+.botonAzul:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.botonAzul:active {
+	position:relative;
+	top:1px;
+}
+
+.botonVerde {
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:3px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #528009;
+  width: 5vw;
+}
+.botonVerde:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+.botonVerde:active {
+	position:relative;
+	top:1px;
+}
+
+.botonNaranja {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:3px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #ffee66;
+  width: 5vw;
+}
+.botonNaranja:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.botonNaranja:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
 
 nav > ul > li {
   text-align: bottom;
@@ -112,7 +190,7 @@ section{
   padding-left: 10vw;
   margin-top: 30px;
   display: flex;
-  flex-direction: column;   
+  flex-direction: row;   
   margin-left: 20vw;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
@@ -120,6 +198,46 @@ section{
   height: 110px;
   background-color: rgba(17, 58, 243, 0.596);
 }
+
+.recuadroDentro{
+  margin-left: -10vw;
+  margin-top: -15px;
+  display: flex;
+  flex-direction: column;   
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.recuadroDentro2{
+  margin-left: 0vw;
+  display: flex;
+  flex-direction: column;   
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+
+  .botonInvest {
+    background-color:#7892c2;
+    border-radius:28px;
+    border:4px solid rgb(39, 67, 117);
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    padding:15px 76px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #283966;
+  }
+  .botonInvest:hover {
+    background-color:#476e9e;
+  }
+  .botonInvest:active {
+    position:relative;
+    top:1px;
+  }
+  
 
 .recuadroBis{
   padding-left: 10vw;

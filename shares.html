@@ -19,14 +19,13 @@
         <ul>
           <li><a href="./index.html">Markets showroom</a></li>
           <li><a href="./shares.html">Shares</a></li>
-          <li><a href="#">Price Request Form</a></li>
         </ul>
       </nav>
       <nav class="botonesContenedor">
         <ul class="botones">
-          <li><input id="colourBtn1" type="submit" value="Blue"/></li>
-          <li><input id="colourBtn2" type="submit" value="Green"/></li>
-          <li><input id="colourBtn3" type="submit" value="Yellow"/></li>
+          <li><input class="botonAzul" id="colourBtn1" type="submit" value="Blue"/></li>
+          <li><input class="botonVerde" id="colourBtn2" type="submit" value="Green"/></li>
+          <li><input class="botonNaranja" id="colourBtn3" type="submit" value="Yellow"/></li>
         </ul>
       </nav>
     </header>
@@ -36,11 +35,15 @@
         <h1 id="log">SHARES</h1>
         <div class="h2sideshares">
           <button><i class="material-icons">search</i></button>
-          <input type="search" id="site-search" name="q"
-          aria-label="Search through site content" placeholder="Enter stock name or EPIC">      
+          <div class="buscadorYresultados">
+          <input type="text" class="buscador" autocomplete="off" id="search" name="q" placeholder="Enter stock name or EPIC">      
+          <div class="companyList" id="companyList"></div>
+         </div>
         </div>
+    
       </section>
       <section class="recuadro">
+        <section class="recuadroDentro">
         <div class="recuadrocabecera">
           <p class="separador">Sell:57.92p</p>
           <p class="separador2">|</p>
@@ -52,6 +55,11 @@
             <p class="separador">FTSE 100: <i class="material-icons" style="color:green; vertical-align: bottom;">arrow_upward</i>1.09%</p>
           </div>
       </section>  
+      <section class="recuadroDentro2">
+        <input class="botonInvest" id="colourBtn1" type="submit" value="BUY"/>
+
+      </section>
+    </section>
       <section>
         <h2>At A Glance</h2>
       </section>  
