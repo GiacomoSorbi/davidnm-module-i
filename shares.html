@@ -129,7 +129,7 @@
         </script>
         
         <script>
-          Highcharts.getJSON('./jsonfiles/ftse100.json', function (data) {
+          Highcharts.getJSON('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=E6K4TUXH7FKT8BB1&datatype=json&outputsize=compact', function (data) {
               // Create the chart
               Highcharts.stockChart('container', {   
         
