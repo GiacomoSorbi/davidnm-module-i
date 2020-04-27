@@ -285,13 +285,15 @@ div{
 }
 
 .row{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
   overflow: visible;
   display: flex;
   flex-direction: column;   
   padding-left: 0vw;
   font-family: Arial, Helvetica, sans-serif;
-  width: 12vw;
-  height: 30px;
+  width: 5vw;
+  height: 10px;
   background-color: darkgray;
 }
 
