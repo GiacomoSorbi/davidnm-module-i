@@ -1,3 +1,13 @@
+// name in the shares page:
+var parameters = location.search.substring(1);
+var temp = parameters.split("=");
+var l = unescape(temp[1]);
+
+if(l.toString()=="undefined"){
+  l='Generic shares page'};
+  document.getElementById("log").innerHTML = l;  
+  document.getElementById("cierraModal").innerHTML = '&times; '+ l;  
+
 const colourBtn1=document.getElementById('colourBtn1')
 const colourBtn2=document.getElementById('colourBtn2')
 

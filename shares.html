@@ -57,24 +57,32 @@
       </section>  
       <section class="recuadroDentro2">
         <input class="botonInvest" id="investbutton" type="submit" value="INVEST"/>
-<div id="myModal" class="modal">
+
+        <div id="myModal" class="modal">
     <div class="modal__header">
-    <span class="close">&times;</span>
+    <span id="cierraModal" class="close">&times;</span>
   </div>
   <div class="modal-content"> 
-    <label><b>Email</b></label> 
-    <input class="inputForm" type="text" placeholder="Enter Email" name="email" required> 
-
-    <label><b>Password</b></label> 
-    <input class="inputForm" type="password" placeholder="Enter Password" name="psw" required> 
-
-    <label><b>Repeat Password</b></label> 
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required> 
-
+    <div class="group3">
+    <div class="par2">
+    <label><b>order type</b></label> 
+    <select class="inputForm" id="orders">
+      <option value="volvo">Limit</option>
+      <option value="saab">Market</option>
+    </select>
+  </div> 
+  <div class="par2">
+    <label><b>Price</b></label> 
+    <input class="inputForm" type="text" placeholder="00.00" name="price" required> 
+  </div>
+    <div class="par2">
+    <label><b>Nº of titles</b></label> 
+    <input class="inputForm" type="number" placeholder="0" name="titles" required> 
+</div>
+</div>
     <div class="clearfix"> 
         <button type="submit" class="signupbtn">BUY</button> 
         <button type="button" class="cancelbtn">SELL</button> 
-
     </div> 
 </div>
 </div>
@@ -148,40 +156,10 @@
       
       
       
-      <script language="JavaScript">
-        var parameters = location.search.substring(1);
-        var temp = parameters.split("=");
-        var l = unescape(temp[1]);
-        if(l.toString()=="undefined"){
-          l='Generic shares page'};
-          document.getElementById("log").innerHTML = l;
-        </script>
-        
-        <script>
-          Highcharts.getJSON('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=E6K4TUXH7FKT8BB1&datatype=json&outputsize=compact', function (data) {
-              // Create the chart
-              Highcharts.stockChart('container', {   
+
         
         
-                  rangeSelector: {
-                      selected: 1
-                  },
-                  scrollbar: {
-                      hide: true
-                  },
-                  series: [{
-                      name: 'AAPL',
-                      data: data,
-                      tooltip: {
-                          valueDecimals: 2
-                      }
-                  }]
-              });
-          });
-        
-          </script>
-        
-        
+        <script src="chartfunctions.js"></script>   
         <script src="functionsCssChange.js"></script>
         
 
