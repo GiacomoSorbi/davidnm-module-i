@@ -8,7 +8,7 @@ header{
   flex-direction: row;
   text-align: center;
   padding-top: 1vw;
-  padding-left: 15vw;
+  padding-left: 15%;
   padding-bottom: 0.01vw;
   background-color: rgb(39, 67, 117);
 
@@ -28,11 +28,12 @@ header{
 
 .cabecera {
   margin: 0;
-  padding-top: 15px;
+  margin-top: 10px;
+  padding-top: 1vw;
   margin-left: 10vw;
   text-align: center;
   color: whitesmoke;
-  font-size: 30px;
+  font-size: 1.6vw;
   font-family: Arial, Helvetica, sans-serif;
     transition: 0.5s font-size linear;
     background-color: rgb(39, 67, 117);
@@ -57,7 +58,7 @@ nav > ul {
 
 .botonesContenedor {
 
-  padding-left: 11vw;
+  padding-left: 13.5%;
   padding-top: 10px;
   display: flex;
   flex-direction: column;   
@@ -81,10 +82,11 @@ nav > ul {
 	color:#ffffff;
 	font-family:Arial;
 	font-size:13px;
-	padding:6px 24px;
+	padding:6px;
 	text-decoration:none;
   text-shadow:0px 1px 0px #154682;
   width: 5vw;
+  min-width: 60px;
 }
 .botonAzul:hover {
 	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
@@ -106,10 +108,11 @@ nav > ul {
 	color:#ffffff;
 	font-family:Arial;
 	font-size:13px;
-	padding:6px 24px;
+	padding:6px;
 	text-decoration:none;
   text-shadow:0px 1px 0px #528009;
   width: 5vw;
+  min-width: 60px;
 }
 .botonVerde:hover {
 	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
@@ -131,10 +134,12 @@ nav > ul {
 	color:#333333;
 	font-family:Arial;
 	font-size:13px;
-	padding:6px 24px;
+	padding:6px;
 	text-decoration:none;
   text-shadow:0px 1px 0px #ffee66;
   width: 5vw;
+  min-width: 60px;
+
 }
 .botonNaranja:hover {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
@@ -237,7 +242,8 @@ section{
     cursor:pointer;
     color:#ffffff;
     font-family:Arial;
-    font-size:20px;
+    font-size:1vw;
+    margin-right: 14vw;
     padding:15px 76px;
     text-decoration:none;
     text-shadow:0px 1px 0px #283966;
@@ -569,7 +575,7 @@ a {
   flex-direction: column;   
   padding-left: 0vw;
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 310px;
+  min-width: 26.5vw;
   height: 300px;
 
 }
@@ -579,7 +585,7 @@ a {
   flex-direction: column;   
   padding-left: 2vw;
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 310px;
+  min-width: 26.5vw;
   height: 300px;
 }
 
@@ -598,6 +604,15 @@ table {
   align-self: center;
   width: 29.8%;
   margin-right:2%;
+}
+
+.subidas{
+  align-self: auto;
+  width: 100%;
+}
+.bajadas{
+  align-self: auto;
+  width: 100%;
 }
 
 .finalshare{
@@ -640,6 +655,19 @@ tr td.tdsecondbis {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@media screen and (max-width: 1200px)and (min-width: 800px){
+  .cabecera {
+    display:none;
+  }
+
+  section{
+    display: block;
+
+  }
+}
+
 
 @media screen and (max-width: 800px){
 
@@ -693,6 +721,8 @@ tr td.tdsecondbis {
         display: block;
       }
       .sectionContenedora2{
+        flex-direction: row;
+        align-items: flex-start;
         padding-top: 1vw;
         display: block;
       }
