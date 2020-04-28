@@ -1,8 +1,9 @@
 Highcharts.getJSON('./jsonfiles/ftse100.json', function (data) {
     // Create the chart
-    Highcharts.stockChart('container', {   
-
-
+    Highcharts.stockChart('container', {
+        chart: {
+            styledMode: true
+            },      
         rangeSelector: {
             selected: 1
         },
@@ -24,8 +25,9 @@ function myJsFunc(param1) {
   Highcharts.getJSON('./jsonfiles/'+param1+".json", function (data) {
     // Create the chart
     Highcharts.stockChart('container', {   
-
-
+        chart: {
+            styledMode: true
+            }, 
         rangeSelector: {
             selected: 1
         },
