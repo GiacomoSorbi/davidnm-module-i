@@ -455,7 +455,7 @@ div{
   padding-left: 0vw;
   padding-right: 2vw;
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 610px;
+  width: 38%;
   height: 300px;
 }
 
