@@ -6,7 +6,7 @@ var l = unescape(temp[1]);
 if(l.toString()=="undefined"){
   l='Generic shares page'};
   document.getElementById("log").innerHTML = l;  
-  document.getElementById("cierraModal").innerHTML = '&times; '+ l;  
+  document.getElementById("cierraModal").innerHTML = '&times; Enter an Order for: '+ l;  
 
 const colourBtn1=document.getElementById('colourBtn1')
 const colourBtn2=document.getElementById('colourBtn2')
