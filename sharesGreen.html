@@ -236,39 +236,14 @@
   </section>
 
 
-  <script>
-    Highcharts.getJSON('https://www.highcharts.com/samples/data/aapl-c.json', function (data) {
-        // Create the chart
-        Highcharts.stockChart('container', {   
 
-          
-          chart: {
-            styledMode: true
-            }, 
-              rangeSelector: {
-                selected: 1
-            },
-            scrollbar: {
-                hide: true
-            },
-            series: [{
-                name: 'AAPL',
-                data: data,
-                tooltip: {
-                    valueDecimals: 2
-                }
-            }]
-        });
-    });
-  
-    </script>
     
     
 
       
-      
-      <script src="functionsCssChange.js"></script>
-      
+  <script src="chartfunctions.js"></script>   
+  <script src="functionsCssChange.js"></script>
+
 
 
     </body>
