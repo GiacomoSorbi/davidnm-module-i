@@ -440,7 +440,7 @@ div{
   flex-direction: column;   
   padding-left: 2vw;
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 610px;
+  min-width: 25%;
   height: 300px;
 }
 
