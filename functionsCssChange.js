@@ -31,3 +31,25 @@ const submitHandlerChangeColour = function(event){
 
   colourBtn1.onclick = submitHandlerChangeColour 
   colourBtn2.onclick = submitHandlerChangeColour2
+
+
+  // Get the Invest modal
+var modal = document.getElementById("myModal");
+// Get the button that opens the Invest modal
+var btn = document.getElementById("investbutton");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on the button, open the Invest modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the Invest modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the Invest modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
