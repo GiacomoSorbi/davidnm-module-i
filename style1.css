@@ -1109,8 +1109,9 @@ h3 {
   }
 
   .buscador{
+    margin-left: 8vw;
     height: 30px;
-    width: 88vw;
+    width: auto;
   }
 
   .buscadorYresultados{
@@ -1122,6 +1123,7 @@ h3 {
   }
 
   .h1side{
+    margin-left: 2vw;
     padding-right: 2vw;
     padding-top: 18px;
     display: flex;
@@ -1270,6 +1272,42 @@ h3 {
         height: 250px;
       }
 
+      .botonesContenedor {
+        margin-right: 2vw;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;   
+        list-style-type: none;
+      }
+
+
+      nav {
+    padding-left: 0vw;
+    padding-top: 50px;
+    justify-content: space-between;
+    background-color: rgb(39, 67, 117);
+}
+
+.divtopflops {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 26.5vw;
+  height: 200px;
+}
+
+.divtopflops2{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;   
+  padding-left: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 26.5vw;
+  height: 250px;
+}
 }
 
 
