@@ -208,7 +208,7 @@ margin-top: -20px;
 
 .recuadro{
   padding-left: 10vw;
-  margin-top: 30px;
+  margin-top: 80px;
   display: flex;
   flex-direction: row;   
   margin-left: 20vw;
@@ -1023,7 +1023,7 @@ h3 {
 
   .recuadro{
     padding-left: 10vw;
-    margin-top: 30px;
+    margin-top: 80px;
     display: flex;
     flex-direction: row;   
     margin-left: 16vw;
