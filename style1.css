@@ -182,7 +182,19 @@ section{
   text-align: bottom;
 
 }
+.risersandfallers{
+  padding-top: 50px;
+  margin-bottom: -10px;
+  padding-left: 10vw;
+  display: flex;
+  margin-left: 10vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: bottom;
+
+}
+
 .sectionContenedora{
+margin-top: -20px;
   padding-top: 15px;
   display: flex;
   padding-left: 0vw;
@@ -193,7 +205,7 @@ section{
 
 }
 .sectionContenedora2{
-  padding-top: 15px;
+    padding-top: -15px;
   display: flex;
   padding-left: 0vw;
   margin-left: 0vw;
@@ -470,7 +482,7 @@ div{
 .divShares2{
   display: flex;
   flex-direction: column;   
-  margin-left: 2vw;
+  margin-left: 1vw;
   margin-right: 0vw;
   padding-left: 0vw;
   padding-right: 0vw;
