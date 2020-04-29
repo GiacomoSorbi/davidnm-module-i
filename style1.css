@@ -204,15 +204,7 @@ margin-top: -20px;
   text-align: bottom;
 
 }
-.sectionContenedora2{
-    padding-top: -15px;
-  display: flex;
-  padding-left: 0vw;
-  margin-left: 0vw;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: bottom;
 
-}
 
 .recuadro{
   padding-left: 10vw;
@@ -651,11 +643,11 @@ table {
 
 .subidas{
   align-self: auto;
-  width: 100%;
+  width: auto;
 }
 .bajadas{
   align-self: auto;
-  width: 100%;
+  width: auto;
 }
 
 .finalshare{
@@ -667,6 +659,17 @@ table {
   padding-top: 40px;
   display: flex;
   align-items: stretch;
+}
+
+.sectionContenedora2{
+  padding-top: -15px;
+display: flex;
+align-items: stretch;
+padding-left: 0vw;
+margin-left: 0vw;
+font-family: Arial, Helvetica, sans-serif;
+text-align: bottom;
+
 }
 .contenedoraGrafica{
   padding-top: 40px;
