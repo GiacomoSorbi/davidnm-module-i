@@ -76,7 +76,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-
+}
 
   // name in the shares page:
 var parameters = location.search.substring(1);
@@ -90,4 +90,3 @@ if(l.toString()=="undefined"){
   document.getElementById("log").innerHTML = l;  
   document.getElementById("cierraModal").innerHTML = '&times; Enter an Order for: '+ l;  
 
-}
