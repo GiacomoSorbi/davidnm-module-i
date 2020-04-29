@@ -711,6 +711,16 @@ tr td.tdsecondbis {
 
 @media screen and (max-width: 1824px)and (min-width: 1024px){
 
+  .subidas{
+    align-self: auto;
+    width: 95%;
+  }
+
+  .bajadas{
+    align-self: auto;
+    width: 80%;
+  }
+
   .recuadroDentro2{
     padding-left: 5vw;
   }
