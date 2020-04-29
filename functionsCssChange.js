@@ -86,11 +86,8 @@ var l = unescape(temp[1]);
 if(l.toString()=="undefined"){
   l='Generic shares page'
 };
-if(l.toString()=null){
-  l='Generic shares page'
-};
+
   document.getElementById("log").innerHTML = l;  
   document.getElementById("cierraModal").innerHTML = '&times; Enter an Order for: '+ l;  
-
 
 }
