@@ -10,7 +10,7 @@ if(l.toString()=="undefined"){
 
 const colourBtn1=document.getElementById('colourBtn1')
 const colourBtn2=document.getElementById('colourBtn2')
-const colourBtn2=document.getElementById('colourBtn3')
+const colourBtn3=document.getElementById('colourBtn3')
 
 
 
