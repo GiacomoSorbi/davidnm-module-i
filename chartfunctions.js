@@ -83,7 +83,7 @@ if(param1=="world"){
     <td class="tdsecondbis">+2.55%</td>
     </tr>
     <tr class="tdbis">
-    <td class="tdbis"><a href="#" onclick="myJsFunc('ftseTechMARK100');">FTSE techMARK 100</a></td>
+    <td class="tdbis"><a href="#" onclick="myJsFunc('HangSeng');">Hang Seng</a></td>
     <td class="tdbis">4,517.20</td>
     <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
     <td class="tdbis">+157.89</td>
