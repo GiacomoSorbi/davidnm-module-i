@@ -1072,6 +1072,39 @@ h3 {
 
 @media only screen and (max-width: 667px){
 
+  .recuadro{
+    padding-left: 5vw;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;   
+    margin-left: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 88vw;
+    height: 110px;
+    background-color: rgba(17, 58, 243, 0.596);
+  }
+
+  .recuadroDentro{
+    margin-left: -10vw;
+    margin-top: -15px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;   
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+  
+  .recuadroDentro2{
+    width: 15vw;
+    margin-left: 30vw;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;   
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+
   .risersandfallers{
     padding-top: 30px;
     margin-bottom: -10px;
@@ -1087,12 +1120,24 @@ h3 {
   .recuadrocabecera{
     display: flex;
     flex-direction: row;   
-    padding-left: 0vw;
+    padding-left: 9vw;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: -8vw;
     margin-right: 0vw;
     width: 80vw;
     height: 30px;  
+  }
+
+  .recuadrocabecera2{
+    display: flex;
+    flex-direction: row;   
+    padding-left: 9vw;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -8vw;
+    min-width: 60px;
+    height: 30px;
+    
   }
 
   .finaltables{
@@ -1308,6 +1353,126 @@ h3 {
   min-width: 26.5vw;
   height: 250px;
 }
+
+
+.separador{
+  font-size:3vw ;
+  margin-left: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 3vw;
+  height: 7px;
+  color: white;
+  vertical-align:bottom;
+}
+
+.separador2{
+  font-size:3vw ;
+  margin-left: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 3vw;
+  height: 30px;
+  color: white;
+}
+
+.separador3{
+  margin-left: 4vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:2vw ;
+  width: 20vw;
+  height: 40px;
+  color: rgb(39, 67, 117);
+  margin-top: px;
+}
+
+.botonInvest {
+  margin-top: 40px;
+  background-color:#7892c2;
+  border-radius:10px;
+  border:4px solid rgb(39, 67, 117);
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:2vw;
+  padding: 10px 9vw;
+  text-align: left;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
+}
+
+.modal__header{
+  background-color: rgb(39, 67, 117);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  margin-bottom: 0px;
+  height: 30px;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  margin-top: 0px;
+  background-color: #fefefe;
+  margin: 0% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 150px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+
+.recuadroBis{
+  padding-left: 3vw;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;   
+  margin-left: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  width: 90vw;
+  height: 130px;
+  border-style: solid;
+  background-color: rgb(243, 237, 237);
+}
+.recuadrocabecera3{
+  display: flex;
+  flex-direction: row;   
+  padding-left: -6vw;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: -6vw;
+  margin-right: -4vw;
+  min-width: 50px;
+  height: 30px;  
+  margin-top: 6px;
+}
+
+.finalshare{
+  margin-bottom: 30px;
+  margin-left: 3vw;
+  align-self: auto;
+  padding-left: 3vw;
+  width: 90%;
+  margin-right:%;
+}
+
+.fundamentalsshare{
+  padding-left: 3vw;
+  margin-left: 3vw;
+  align-self: center;
+  width: 90%;
+  margin-right:2%;
+}
+
+
 }
 
 
