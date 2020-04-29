@@ -10,6 +10,7 @@ if(l.toString()=="undefined"){
 
 const colourBtn1=document.getElementById('colourBtn1')
 const colourBtn2=document.getElementById('colourBtn2')
+const colourBtn2=document.getElementById('colourBtn3')
 
 
 
@@ -39,8 +40,23 @@ const submitHandlerChangeColour = function(event){
 
     }
 
+    const submitHandlerChangeColour3 = function(event){
+      // prevents form from reloading
+      event.preventDefault()
+      var str=""+window.location.href;
+      if (str.includes("index"))
+      window.location.href="./indexOrange.html";
+      if (str.includes("shares"))
+      window.location.href="./sharesOrange.html";
+  
+      console.log(str);
+  
+      }
+
   colourBtn1.onclick = submitHandlerChangeColour 
   colourBtn2.onclick = submitHandlerChangeColour2
+  colourBtn3.onclick = submitHandlerChangeColour3
+
 
 
   // Get the Invest modal
