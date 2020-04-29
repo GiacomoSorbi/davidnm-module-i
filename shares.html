@@ -1,99 +1,98 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
-    <title>Commercial Company Tool</title>
-    <link id="estilos" href="./style1.css" rel="stylesheet" />
-    <link id="estilos" href="./styleHC.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.highcharts.com/stock/highstock.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
-    
-  </head>
-  <body>
-    
-    <header>
-      <p class="cabecera">Commercial <br> Company Tool</p>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Markets showroom</a></li>
-          <li><a href="./shares.html">Shares</a></li>
-        </ul>
-      </nav>
-      <nav class="botonesContenedor">
-        <ul class="botones">
-          <li><input class="botonAzul" id="colourBtn1" type="submit" value="Blue"/></li>
-          <li><input class="botonVerde" id="colourBtn2" type="submit" value="Green"/></li>
-          <li><input class="botonNaranja" id="colourBtn3" type="submit" value="Yellow"/></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Commercial Company Tool</title>
+      <link id="estilos" href="./style1.css" rel="stylesheet" />
+      <link id="estilos" href="./styleHC.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://code.highcharts.com/stock/highstock.js"></script>
+      <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+      <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+      <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
       
-      <section>
-        <h1 id="log">SHARES</h1>
-        <div class="h2sideshares">
-          <button><i class="material-icons">search</i></button>
-          <div class="buscadorYresultados">
-          <input type="text" class="buscador" autocomplete="off" id="search" name="q" placeholder="Enter stock name or EPIC">      
-          <div class="companyList" id="companyList"></div>
-         </div>
-        </div>
-    
-      </section>
-      <section class="recuadro">
-        <section class="recuadroDentro">
-        <div class="recuadrocabecera">
-          <p class="separador">Sell:57.92p</p>
-          <p class="separador2">|</p>
-          <p class="separador">Buy:57.94p</p>
-          <p class="separador2">|</p>
-          <p class="separador"><i class="material-icons" style="color:green; vertical-align:middle">arrow_upward</i> 0.59p (1.03%)</p>
-        </div>
-          <div class="recuadrocabecera2">
-            <p class="separador">FTSE 100: <i class="material-icons" style="color:green; vertical-align: bottom;">arrow_upward</i>1.09%</p>
+    </head>
+    <body>
+      
+      <header>
+        <p class="cabecera">Commercial <br> Company Tool</p>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Markets showroom</a></li>
+            <li><a href="./shares.html">Shares</a></li>
+          </ul>
+        </nav>
+        <nav class="botonesContenedor">
+          <ul class="botones">
+            <li><input class="botonAzul" id="colourBtn1" type="submit" value="Blue"/></li>
+            <li><input class="botonVerde" id="colourBtn2" type="submit" value="Green"/></li>
+            <li><input class="botonNaranja" id="colourBtn3" type="submit" value="Yellow"/></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        
+        <section>
+          <h1 id="log">SHARES</h1>
+          <div class="h2sideshares">
+            <button><i class="material-icons">search</i></button>
+            <div class="buscadorYresultados">
+              <input type="text" class="buscador" autocomplete="off" id="search" name="q" placeholder="Enter stock name or EPIC">      
+              <div class="companyList" id="companyList"></div>
+            </div>
           </div>
-      </section>  
-      <section class="recuadroDentro2">
-        <input class="botonInvest" id="investbutton" type="submit" value="INVEST"/>
-
-        <div id="myModal" class="modal">
-    <div class="modal__header">
-    <span id="cierraModal" class="close">&times;</span>
-  </div>
-  <div class="modal-content"> 
-    <div class="group3">
-    <div class="par2">
-    <label><b>order type</b></label> 
-    <select class="inputForm" id="orders">
-      <option value="volvo">Limit</option>
-      <option value="saab">Market</option>
-    </select>
-  </div> 
-  <div class="par2">
-    <label><b>Price</b></label> 
-    <input class="inputForm" type="text" placeholder="00.00" name="price" required> 
-  </div>
-    <div class="par2">
-    <label><b>Nº of titles</b></label> 
-    <input class="inputForm" type="number" placeholder="0" name="titles" required> 
-</div>
-</div>
-    <div class="clearfix"> 
-        <button type="submit" class="signupbtn">BUY</button> 
-        <button type="button" class="cancelbtn">SELL</button> 
-    </div> 
-</div>
-</div>
-
-      </section>
-    </section>
-      <section>
-        <h2>At A Glance</h2>
-      </section>  
-
+          
+        </section>
+        <section class="recuadro">
+          <section class="recuadroDentro">
+            <div class="recuadrocabecera">
+              <p class="separador">Sell:57.92p</p>
+              <p class="separador2">|</p>
+              <p class="separador">Buy:57.94p</p>
+              <p class="separador2">|</p>
+              <p class="separador"><i class="material-icons" style="color:green; vertical-align:middle">arrow_upward</i> 0.59p (1.03%)</p>
+            </div>
+            <div class="recuadrocabecera2">
+              <p class="separador">FTSE 100: <i class="material-icons" style="color:green; vertical-align: bottom;">arrow_upward</i>1.09%</p>
+            </div>
+          </section>  
+          <section class="recuadroDentro2">
+            <input class="botonInvest" id="investbutton" type="submit" value="INVEST"/>
+            
+            <div id="myModal" class="modal">
+              <div class="modal__header">
+                <span id="cierraModal" class="close">&times;</span>
+              </div>
+              <div class="modal-content"> 
+                <div class="group3">
+                  <div class="par2">
+                    <label><b>order type</b></label> 
+                    <select class="inputForm" id="orders">
+                      <option value="volvo">Limit</option>
+                      <option value="saab">Market</option>
+                    </select>
+                  </div> 
+                  <div class="par2">
+                    <label><b>Price</b></label> 
+                    <input class="inputForm" type="text" placeholder="00.00" name="price" required> 
+                  </div>
+                  <div class="par2">
+                    <label><b>Nº of titles</b></label> 
+                    <input class="inputForm" type="number" placeholder="0" name="titles" required> 
+                  </div>
+                </div>
+                <div class="clearfix"> 
+                  <button type="submit" class="signupbtn">BUY</button> 
+                  <button type="button" class="cancelbtn">SELL</button> 
+                </div> 
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>At A Glance</h2>
+        </section>  
+        
         <section class="recuadroBis">
           <div class="recuadrocabecera">
             <p class="separador3">Open: 57.44p</p>
@@ -106,147 +105,147 @@
             <p class="separador3">Trade low: 56.48p</p>
             <p class="separador3">Year low: 48.16p</p>
             <p class="separador3">P/E ratio: 10.44</p>
-            </div>
-            <div class="recuadrocabecera">
-              <p class="separador3">Previous: 0.71p (1.25%)</p>
-              <p class="separador3">Volume: 170,125,290</p>
-              <p class="separador3">Dividend yield: 5.53%</p>
-              <p class="separador3">EMS: 30,000</p>
           </div>
-
-      </section>
-      <section class="contenedoraGrafica">
-        <div class="divShares" id="container"></div>
-        <table class="fundamentalsshare">
-          <tbody><tr>
-          <td class="tdmain"colspan="4">FUNDAMENTAL DATA</td>
-          </tr>
-          <tr>
-          <td class="tdbis">Year ending:</td>
-          <td class="tdbis">31/12/2019	</td>
-          <td class="tdbis">31/12/2018</td>
-          </tr>
-          <tr>
-          <td class="tdsecondbis">Revenue (£m)</td>
-          <td class="tdsecondbis">16,587.00</td>
-          <td class="tdsecondbis">15,729.00</td>
-          </tr>
-          <tr>
-          <td class="tdbis">Profit before tax (£m)</td>
-          <td class="tdbis">(891.00)</td>
-          <td class="tdbis">(2,947.00)</td>
-          </tr>
-          <tr>
-          <td class="tdsecondbis">Adjusted EPS (p):</td>
-          <td class="tdsecondbis">15.90</td>
-          <td class="tdsecondbis">16.00</td>
-          </tr>
-          <tr>
-          <td class="tdbis">P/E ratio</td>
-          <td class="tdbis">43.00</td>
-          <td class="tdbis">51.90</td>
-          </tr>
-          <tr>
-          <td class="tdsecondbis">PEG</td>
-          <td class="tdsecondbis">n/a</td>
-          <td class="tdsecondbis">0.10</td>
-          </tr>
-        <tr>
-        <td class="tdbis">EPS growth (%)</td>
-        <td class="tdbis">(1.00)</td>
-        <td class="tdbis">596.00</td>
-        </tr>
+          <div class="recuadrocabecera">
+            <p class="separador3">Previous: 0.71p (1.25%)</p>
+            <p class="separador3">Volume: 170,125,290</p>
+            <p class="separador3">Dividend yield: 5.53%</p>
+            <p class="separador3">EMS: 30,000</p>
+          </div>
+          
+        </section>
+        <section class="contenedoraGrafica">
+          <div class="divShares" id="container"></div>
+          <table class="fundamentalsshare">
+            <tbody><tr>
+              <td class="tdmain"colspan="4">FUNDAMENTAL DATA</td>
+            </tr>
+            <tr>
+              <td class="tdbis">Year ending:</td>
+              <td class="tdbis">31/12/2019	</td>
+              <td class="tdbis">31/12/2018</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">Revenue (£m)</td>
+              <td class="tdsecondbis">16,587.00</td>
+              <td class="tdsecondbis">15,729.00</td>
+            </tr>
+            <tr>
+              <td class="tdbis">Profit before tax (£m)</td>
+              <td class="tdbis">(891.00)</td>
+              <td class="tdbis">(2,947.00)</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">Adjusted EPS (p):</td>
+              <td class="tdsecondbis">15.90</td>
+              <td class="tdsecondbis">16.00</td>
+            </tr>
+            <tr>
+              <td class="tdbis">P/E ratio</td>
+              <td class="tdbis">43.00</td>
+              <td class="tdbis">51.90</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">PEG</td>
+              <td class="tdsecondbis">n/a</td>
+              <td class="tdsecondbis">0.10</td>
+            </tr>
+            <tr>
+              <td class="tdbis">EPS growth (%)</td>
+              <td class="tdbis">(1.00)</td>
+              <td class="tdbis">596.00</td>
+            </tr>
           </tbody></table>  
-      </section>
-     
-      <section class="finaltables">
-        <table class="finalshare">
-          <tbody><tr>
-          <td class="tdmain"colspan="4">PERFORMANCE</td>
-          </tr>
-          <tr>
-          <td class="tdsecondbis">1 week</td>
-          <td class="tdbis">29.66%</td>
-          <td class="tdsecondbis">1 year</td>
-          <td class="tdbis">75.26%</td>
-          </tr>
-          <tr>
-          <td class="tdsecondbis">1 month</td>
-          <td class="tdbis">17.5%</td>
-          <td class="tdsecondbis">2 years</td>
-          <td class="tdbis">82.16%</td>
-          </tr>
-          <tr>
-          <td class="tdsecondbis">3 months</td>
-          <td class="tdbis">73.89%</td>
-          <td class="tdsecondbis">3 years</td>
-          <td class="tdbis">82.03%</td>
-          </tr>
-          <tr>
-          <td class="tdsecondbis">6 months</td>
-          <td class="tdbis">15.90</td>
-          <td class="tdsecondbis">3 years</td>
-          <td class="tdbis">82.03%</td>          
-          </tr>
+        </section>
+        
+        <section class="finaltables">
+          <table class="finalshare">
+            <tbody><tr>
+              <td class="tdmain"colspan="4">PERFORMANCE</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">1 week</td>
+              <td class="tdbis">29.66%</td>
+              <td class="tdsecondbis">1 year</td>
+              <td class="tdbis">75.26%</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">1 month</td>
+              <td class="tdbis">17.5%</td>
+              <td class="tdsecondbis">2 years</td>
+              <td class="tdbis">82.16%</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">3 months</td>
+              <td class="tdbis">73.89%</td>
+              <td class="tdsecondbis">3 years</td>
+              <td class="tdbis">82.03%</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">6 months</td>
+              <td class="tdbis">15.90</td>
+              <td class="tdsecondbis">3 years</td>
+              <td class="tdbis">82.03%</td>          
+            </tr>
           </tbody></table>  
-
-        <table class="finalshare">
-          <tbody><tr>
-          <td class="tdmain"colspan="4">RECENT DIVIDENDS</td>
-          </tr>
-          <tr>
-          <td class="tdbis">Type</td>
-          <td class="tdbis">Ex-div date</td>
-          <td class="tdbis">Payment date</td>
-          <td class="tdbis">Amount</td>
-          </tr>
-          <tr>
-          <td class="tdsecondbis">Interim</td>
-          <td class="tdsecondbis">12/09/2019</td>
-          <td class="tdsecondbis">11/10/2019</td>
-          <td class="tdsecondbis">2.42p</td>
-          </tr>
-          <tr>
-          <td class="tdbis">Final</td>
-          <td class="tdbis">18/04/2019</td>
-          <td class="tdbis">17/05/2019</td>
-          <td class="tdbis">5.08p</td>
-          </tr>
-          <tr>
-            <td class="tdsecondbis">Interim</td>
-            <td class="tdsecondbis">13/09/2018</td>
-            <td class="tdsecondbis">12/10/2018</td>
-            <td class="tdsecondbis">4.80p</td>
-          </tr>
-          <tr>
-            <td class="tdbis">Final</td>
-            <td class="tdbis">19/04/2018</td>
-            <td class="tdbis">18/05/2018</td>
-            <td class="tdbis">5.08p</td>
-          </tr>
-          <tr>
-            <td class="tdsecondbis">Interim</td>
-            <td class="tdsecondbis">14/09/2017</td>
-            <td class="tdsecondbis">13/10/2017</td>
-            <td class="tdsecondbis">4.80p</td>
-          </tr>
+          
+          <table class="finalshare">
+            <tbody><tr>
+              <td class="tdmain"colspan="4">RECENT DIVIDENDS</td>
+            </tr>
+            <tr>
+              <td class="tdbis">Type</td>
+              <td class="tdbis">Ex-div date</td>
+              <td class="tdbis">Payment date</td>
+              <td class="tdbis">Amount</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">Interim</td>
+              <td class="tdsecondbis">12/09/2019</td>
+              <td class="tdsecondbis">11/10/2019</td>
+              <td class="tdsecondbis">2.42p</td>
+            </tr>
+            <tr>
+              <td class="tdbis">Final</td>
+              <td class="tdbis">18/04/2019</td>
+              <td class="tdbis">17/05/2019</td>
+              <td class="tdbis">5.08p</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">Interim</td>
+              <td class="tdsecondbis">13/09/2018</td>
+              <td class="tdsecondbis">12/10/2018</td>
+              <td class="tdsecondbis">4.80p</td>
+            </tr>
+            <tr>
+              <td class="tdbis">Final</td>
+              <td class="tdbis">19/04/2018</td>
+              <td class="tdbis">18/05/2018</td>
+              <td class="tdbis">5.08p</td>
+            </tr>
+            <tr>
+              <td class="tdsecondbis">Interim</td>
+              <td class="tdsecondbis">14/09/2017</td>
+              <td class="tdsecondbis">13/10/2017</td>
+              <td class="tdsecondbis">4.80p</td>
+            </tr>
           </tbody></table>  
-      </section>
-    <section class="footer">
-    </section>
-
-
-      
-      
-      
-
+        </section>
+        <section class="footer">
+        </section>
+        
+        
+        
+        
+        
+        
         
         
         <script src="chartfunctions.js"></script>   
         <script src="functionsCssChange.js"></script>
         
-
-
+        
+        
       </body>
       </html>
-
+      
