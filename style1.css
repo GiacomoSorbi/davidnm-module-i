@@ -810,20 +810,19 @@ h3 {
 
   .subidas{
     align-self: auto;
-    width: auto;
+    width: 32vw;
   }
 
   .bajadas{
     align-self: auto;
-    width: auto;
+    width: 32vw;
     margin-left: 4vw;
-    margin-right: 8vw;
 
   }
 
 
   .espaciobajadas{
-    margin-left: 4vw;
+    margin-left: 8vw;
   }
 
   .sectionContenedora2{
