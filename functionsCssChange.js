@@ -1,12 +1,3 @@
-// name in the shares page:
-var parameters = location.search.substring(1);
-var temp = parameters.split("=");
-var l = unescape(temp[1]);
-
-if(l.toString()=="undefined"){
-  l='Generic shares page'};
-  document.getElementById("log").innerHTML = l;  
-  document.getElementById("cierraModal").innerHTML = '&times; Enter an Order for: '+ l;  
 
 const colourBtn1=document.getElementById('colourBtn1')
 const colourBtn2=document.getElementById('colourBtn2')
@@ -18,10 +9,13 @@ const submitHandlerChangeColour = function(event){
      // prevents form from reloading
      event.preventDefault()
      var str=""+window.location.href;
-     if (str.includes("index"))
+     console.log(str);
+     if (str.includes("index")){
      window.location.href="./index.html";
-     if (str.includes("shares"))
+     }
+     if (str.includes("shares")){
      window.location.href="./shares.html";
+     }
  
      console.log(str);
 
@@ -31,10 +25,12 @@ const submitHandlerChangeColour = function(event){
     // prevents form from reloading
     event.preventDefault()
     var str=""+window.location.href;
-    if (str.includes("index"))
+    if (str.includes("index")){
     window.location.href="./indexGreen.html";
-    if (str.includes("shares"))
+    }
+    if (str.includes("shares")){
     window.location.href="./sharesGreen.html";
+    }
 
     console.log(str);
 
@@ -44,10 +40,12 @@ const submitHandlerChangeColour = function(event){
       // prevents form from reloading
       event.preventDefault()
       var str=""+window.location.href;
-      if (str.includes("index"))
+      if (str.includes("index")){
       window.location.href="./indexOrange.html";
-      if (str.includes("shares"))
+      }
+      if (str.includes("shares")){
       window.location.href="./sharesOrange.html";
+      }
   
       console.log(str);
   
@@ -78,4 +76,21 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+
+
+  // name in the shares page:
+var parameters = location.search.substring(1);
+var temp = parameters.split("=");
+var l = unescape(temp[1]);
+
+if(l.toString()=="undefined"){
+  l='Generic shares page'
+};
+if(l.toString()=null){
+  l='Generic shares page'
+};
+  document.getElementById("log").innerHTML = l;  
+  document.getElementById("cierraModal").innerHTML = '&times; Enter an Order for: '+ l;  
+
+
 }
