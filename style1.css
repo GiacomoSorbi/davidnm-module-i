@@ -708,7 +708,7 @@ tr td.tdsecondbis {
 
 
 
-
+/*
 @media screen and (max-width: 1824px)and (min-width: 1024px){
 
 
@@ -805,12 +805,47 @@ h3 {
 
 }
 
+*/
+@media only screen and (min-width : 768px) and (max-width : 1824px) {
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .subidas{
+    align-self: auto;
+    width: auto;
+  }
+
+  .bajadas{
+    align-self: auto;
+    width: auto;
+    margin-left: 4vw;
+    margin-right: 8vw;
+
+  }
+
+
+  .espaciobajadas{
+    margin-left: 4vw;
+  }
+
+  .sectionContenedora2{
+    padding-top: -15px;
+  display: flex;
+  align-items: stretch;
+  padding-left: 0vw;
+  margin-left: 0vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: bottom;
+  
+  }
+
+  .finalshare{
+    align-self: auto;
+    width: 41.17%;
+    margin-right:2%;
+  }
 
   .fundamentalsshare{
     align-self: center;
-    width: 35.5%;
+    width: 44.5%;
     margin-right:2%;
   }
   
