@@ -1073,7 +1073,7 @@ h3 {
 
   .recuadro{
     padding-left: 5vw;
-    margin-top: 30px;
+    margin-top: 80px;
     display: flex;
     flex-direction: row;   
     margin-left: 5vw;
@@ -1502,7 +1502,7 @@ h3 {
 }
 
 .movil1{
-  margin-top:32px;
+  margin-top:40px;
 }
 
 }
