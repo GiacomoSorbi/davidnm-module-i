@@ -711,6 +711,8 @@ tr td.tdsecondbis {
 
 @media screen and (max-width: 1824px)and (min-width: 1024px){
 
+
+
   .subidas{
     align-self: auto;
     width: 95%;
@@ -786,11 +788,142 @@ h3 {
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
 
+  .h2sideshares{
+    padding-top: 18px;
+    display: flex;
+    flex-direction:row-reverse;   
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 22vw;  
+    height: 30px;
+  }
+  
+
+  .h1side{
+    padding-top: 18px;
+    display: flex;
+    flex-direction:row-reverse;   
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 22vw;
+    height: 30px;
+  }
+
+  .risersandfallers{
+    padding-top: 50px;
+    margin-bottom: -10px;
+    padding-left: 6vw;
+    display: flex;
+    margin-left: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: bottom;
+  
+  }
+
+  h1{
+    min-width: 40vw;
+    margin: 0;
+    padding: 0;
+    padding-top: 18px;
+    margin-left: 0vw;
+    text-align: left;
+    color: rgb(39, 67, 117);;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s font-size linear;
+    }
+
+    h2 {
+      margin: 0;
+      padding-top: 15px;
+      text-align: center;
+      color: rgb(39, 67, 117);
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      transition: 0.5s font-size linear;
+        background-color: white;
+    }
+    h3 {
+      margin: 0;
+      padding-top: 5px;
+      padding-left: 2vw;
+      text-align: center;
+      color: rgb(39, 67, 117);
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      transition: 0.5s font-size linear;
+        background-color: white;
+    }
+
+    .h3first {
+      margin: 0;
+      padding-top: 5px;
+      padding-left: 0vw;
+      text-align: center;
+      color: rgb(39, 67, 117);
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      transition: 0.5s font-size linear;
+        background-color: white;
+    }
+
+  .recuadro{
+    padding-left: 10vw;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;   
+    margin-left: 16vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 50vw;
+    height: 110px;
+    background-color: rgba(17, 58, 243, 0.596);
+  }
+
+  .recuadroDentro{
+    margin-left: -6vw;
+    margin-top: -15px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;   
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+  
+  .recuadroDentro2{
+    width: 15vw;
+    margin-left: 0vw;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;   
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+  
 
   section{
-    display: block;
-
+    padding-top: 15px;
+    padding-left: 6vw;
+    display: flex;
+    margin-left: 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: bottom;
+  
   }
+
+  .cabecera {
+    margin: 0;
+    margin-top: 10px;
+    padding-top: 1vw;
+    margin-left: 6vw;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.6vw;
+    font-family: Arial, Helvetica, sans-serif;
+      transition: 0.5s font-size linear;
+      background-color: rgb(39, 67, 117);
+  
+  }
+
   .recuadroDentro2{
     padding-left: 0vw;
   }
