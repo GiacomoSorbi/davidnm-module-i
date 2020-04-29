@@ -1,202 +1,202 @@
   <!DOCTYPE html>
   <html>
-    <head>
-      <title>Commercial Company Tool</title>
-      <link id="estilos" href="./style1.css" rel="stylesheet" />
-      <link id="estilos" href="./styleHC.css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script src="https://code.highcharts.com/stock/highstock.js"></script>
-  <script src="https://code.highcharts.com/stock/modules/data.js"></script>
-  <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
-  <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
-
-    </head>
-    <body>
-      <header>
-        <p class="cabecera">Commercial <br> Company Tool</p>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Markets showroom</a></li>
-            <li><a href="./shares.html">Shares</a></li>
-          </ul>
-        </nav>
-        <nav class="botonesContenedor">
-          <ul class="botones">
-            <li><input class="botonAzul" id="colourBtn1" type="submit" value="Blue"/></li>
-            <li><input class="botonVerde" id="colourBtn2" type="submit" value="Green"/></li>
-            <li><input class="botonNaranja" id="colourBtn3" type="submit" value="Yellow"/></li>
-            </ul>
-        </nav>
-      </header>
-  <main>
-    <section>
-  <h1>SHARES - PRICES & STOCK MARKETS</h1>
-  <div class="h1side">
-    <button><i class="material-icons">search</i></button>
-  <div class="buscadorYresultados">
-  <input type="text" class="buscador" autocomplete="off" id="search" name="q" placeholder="Enter stock name or EPIC">      
-  <div class="companyList" id="companyList"></div>
-</div>
-</div>
-
-
-    </section>
-    <section class="movil1">
-      <h2>Stock markets</h2>
-    </section>
-    <section class="forMobile">
-      <h3 class="h3first" id="tablaMercadosUK"><a href="#" onclick="myJsFuncCambiatabal('uk');">UK markets</a></h3>
-      <h3 id="tablaMercadosMundo"><a href="#" onclick="myJsFuncCambiatabal('world');">World markets</a></h3>
-    </section>
-
-  <section>
-    <table class="tableindices" id="indices">
-      <tbody><tr>
-      <td class="tdbis"><a href="#" onclick="myJsFunc('ftse100');">FTSE 100</a></td>
-      <td class="tdbis">5,583.50</td>
-      <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-      <td class="tdbis">+168.00</td>
-      <td class="tdbis">+3.10%</td>
-      </tr>
-      <tr class="tdsecondbis">
-      <td class="tdsecondbis"><a href="#" onclick="myJsFunc('ftse250');">FTSE 250</a></td>
-      <td class="tdsecondbis">14,807.14</td>
-      <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-      <td class="tdsecondbis">+707.93</td>
-      <td class="tdsecondbis">+5.02%</td>
-      </tr>
-      <tr>
-      <td class="tdbis"><a href="#" onclick="myJsFunc('ftse350');">FTSE 350</a></td>
-      <td class="tdbis">3,099.04</td>
-      <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-      <td class="tdbis">+102.07</td>
-      <td class="tdbis">+3.41%</td>
-      </tr>
-      <tr class="tdsecondbis">
-      <td class="tdsecondbis"><a href="#" onclick="myJsFunc('ftseAllShare');">FTSE All Share</a></td>
-      <td class="tdsecondbis">3,058.79</td>
-      <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-      <td class="tdsecondbis">+100.39</td>
-      <td class="tdsecondbis">+3.39%</td>
-      </tr>
-      <tr class="tdbis">
-      <td class="tdbis"><a href="#" onclick="myJsFunc('ftseTechMARK100');">FTSE techMARK 100</a></td>
-      <td class="tdbis">4,517.20</td>
-      <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-      <td class="tdbis">+157.89</td>
-      <td class="tdbis">+3.62%</td>
-      </tr>
-      <tr class="tdsecondbis">
-      <td class="tdsecondbis"><a href="#" onclick="myJsFunc('ftseSmallCap');">FTSE Small Cap</a></td>
-      <td class="tdsecondbis">4,282.64</td>
-      <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-      <td class="tdsecondbis">+136.08</td>
-      <td class="tdsecondbis">+3.28%</td>
-      </tr>
-      <tr class="">
-      <td class="tdbis"><a href="#" onclick="myJsFunc('ftseAim100');">FTSE AIM 100</a></td>
-      <td class="tdbis">3,460.62</td>
-      <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-      <td class="tdbis">+112.80</td>
-      <td class="tdbis">+3.37%</td>
-      </tr>
-      </tbody></table>
-      <div class="divShares2" id="container"></div>
-  </section>
-  <section class="risersandfallers">
-    <h2>Risers and fallers</h2>
-  </section>
-
-  <section>
-    <section class="sectionContenedora">
-    <section class="sectionContenedora2">
-    <h3 class="h3first"><a href="#" onclick="myJsFuncCambiatabal('FTSE100');">FTSE100</a></h3>
-    <h3><a href="#" onclick="myJsFuncCambiatabal('AIM100');">AIM100</a></h3>
-    <h3><a href="#" onclick="myJsFuncCambiatabal('SmallCap');">Small Cap</a></h3>
-  </section>
-  <section class="sectionContenedora2" id="subidabajada">
-    <div id="movers-risers" class="divtopflops">
-      <p class="espaciosubidas"><strong>FTSE 100 risers</strong></a></p>
-      <table class="subidas">
-        <tbody><tr>
-          <td class="tdbis"><a href="./shares.html?share=Rolls Royce Holdings Plc" title="View factsheet for Rolls Royce Holdings Plc" class="link-headline">Rolls Royce Holdings Plc</a></td>
-          <td class="tdbis">297.70p</td>
-          <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-          <td class="tdbis">+18.32%</td>
+  <head>
+    <title>Commercial Company Tool</title>
+    <link id="estilos" href="./style1.css" rel="stylesheet" />
+    <link id="estilos" href="./styleHC.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+    
+  </head>
+  <body>
+    <header>
+      <p class="cabecera">Commercial <br> Company Tool</p>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Markets showroom</a></li>
+          <li><a href="./shares.html">Shares</a></li>
+        </ul>
+      </nav>
+      <nav class="botonesContenedor">
+        <ul class="botones">
+          <li><input class="botonAzul" id="colourBtn1" type="submit" value="Blue"/></li>
+          <li><input class="botonVerde" id="colourBtn2" type="submit" value="Green"/></li>
+          <li><input class="botonNaranja" id="colourBtn3" type="submit" value="Yellow"/></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>SHARES - PRICES & STOCK MARKETS</h1>
+        <div class="h1side">
+          <button><i class="material-icons">search</i></button>
+          <div class="buscadorYresultados">
+            <input type="text" class="buscador" autocomplete="off" id="search" name="q" placeholder="Enter stock name or EPIC">      
+            <div class="companyList" id="companyList"></div>
+          </div>
+        </div>
+        
+        
+      </section>
+      <section class="movil1">
+        <h2>Stock markets</h2>
+      </section>
+      <section class="forMobile">
+        <h3 class="h3first" id="tablaMercadosUK"><a href="#" onclick="myJsFuncCambiatabal('uk');">UK markets</a></h3>
+        <h3 id="tablaMercadosMundo"><a href="#" onclick="myJsFuncCambiatabal('world');">World markets</a></h3>
+      </section>
+      
+      <section>
+        <table class="tableindices" id="indices">
+          <tbody><tr>
+            <td class="tdbis"><a href="#" onclick="myJsFunc('ftse100');">FTSE 100</a></td>
+            <td class="tdbis">5,583.50</td>
+            <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+            <td class="tdbis">+168.00</td>
+            <td class="tdbis">+3.10%</td>
           </tr>
           <tr class="tdsecondbis">
-          <td class="tdsecondbis"><a href="./shares.html?share=Melrose Industries plc" title="View factsheet for Melrose Industries plc" class="link-headline">Melrose Industries plc</a></td>
-          <td class="tdsecondbis">88.72p</td>
-          <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-          <td class="tdsecondbis">+17.88%</td>
+            <td class="tdsecondbis"><a href="#" onclick="myJsFunc('ftse250');">FTSE 250</a></td>
+            <td class="tdsecondbis">14,807.14</td>
+            <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+            <td class="tdsecondbis">+707.93</td>
+            <td class="tdsecondbis">+5.02%</td>
           </tr>
           <tr>
-          <td class="tdbis"><a href="./shares.html?share=Carnival plc" title="View factsheet for Carnival plc" class="link-headline">Carnival plc</a></td>
-          <td class="tdbis">721.40p</td>
-          <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-          <td class="tdbis">+17.34%</td>
+            <td class="tdbis"><a href="#" onclick="myJsFunc('ftse350');">FTSE 350</a></td>
+            <td class="tdbis">3,099.04</td>
+            <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+            <td class="tdbis">+102.07</td>
+            <td class="tdbis">+3.41%</td>
           </tr>
           <tr class="tdsecondbis">
-          <td class="tdsecondbis"><a href="./shares.html?share=Legal &amp; General Group plc" title="View factsheet for Legal &amp; General Group plc" class="link-headline">Legal &amp; General Group plc</a></td>
-          <td class="tdsecondbis">186.30p</td>
-          <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-          <td class="tdsecondbis">+16.66%</td>
+            <td class="tdsecondbis"><a href="#" onclick="myJsFunc('ftseAllShare');">FTSE All Share</a></td>
+            <td class="tdsecondbis">3,058.79</td>
+            <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+            <td class="tdsecondbis">+100.39</td>
+            <td class="tdsecondbis">+3.39%</td>
           </tr>
-          <tr>
-          <td class="tdbis"><a href="./shares.html?share=Barratt Developments plc" title="View factsheet for Barratt Developments plc" class="link-headline">Barratt Developments plc</a></td>
-          <td class="tdbis">447.40p</td>
-          <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
-          <td class="tdbis">+16.42%</td>
-          </tr>
-          </tbody></table>
-      </div>
-    <div id="movers-fallers" class="divtopflops2">
-      <p class="espaciobajadas"><strong>FTSE 100 fallers</strong></a></p>
-      <table class="bajadas">
-        <tbody><tr>
-          <td class="tdbis"><a href="./shares.html?share=Sainsbury (J) plc" title="View factsheet for Sainsbury (J) plc" class="link-headline">Sainsbury (J) plc</a></td>
-          <td class="tdbis">206.10p</td>
-          <td class="tdbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
-          <td class="tdbis">-3.42%</td>
+          <tr class="tdbis">
+            <td class="tdbis"><a href="#" onclick="myJsFunc('ftseTechMARK100');">FTSE techMARK 100</a></td>
+            <td class="tdbis">4,517.20</td>
+            <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+            <td class="tdbis">+157.89</td>
+            <td class="tdbis">+3.62%</td>
           </tr>
           <tr class="tdsecondbis">
-          <td class="tdsecondbis"><a href="./shares.html?share=United Utilities Group Plc" title="View factsheet for United Utilities Group Plc" class="link-headline">United Utilities Group Plc</a></td>
-          <td class="tdsecondbis">826.20p</td>
-          <td class="tdsecondbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
-          <td class="tdsecondbis">-2.78%</td>
+            <td class="tdsecondbis"><a href="#" onclick="myJsFunc('ftseSmallCap');">FTSE Small Cap</a></td>
+            <td class="tdsecondbis">4,282.64</td>
+            <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+            <td class="tdsecondbis">+136.08</td>
+            <td class="tdsecondbis">+3.28%</td>
           </tr>
-          <tr>
-          <td class="tdbis"><a href="./shares.html?share=Halma plc" title="View factsheet for Halma plc" class="link-headline">Halma plc</a></td>
-          <td class="tdbis">1,848.50p</td>
-          <td class="tdbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
-          <td class="tdbis">2.17%</td>
+          <tr class="">
+            <td class="tdbis"><a href="#" onclick="myJsFunc('ftseAim100');">FTSE AIM 100</a></td>
+            <td class="tdbis">3,460.62</td>
+            <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+            <td class="tdbis">+112.80</td>
+            <td class="tdbis">+3.37%</td>
           </tr>
-          <tr class="tdsecondbis">
-          <td class="tdsecondbis"><a href="./shares.html?share=London Stock Exchange Group plc" title="View factsheet for London Stock Exchange Group plc" class="link-headline">London Stock Exchange Group plc</a></td>
-          <td class="tdsecondbis">7,064.00p</td>
-          <td class="tdsecondbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
-          <td class="tdsecondbis">-1.89%</td>
-          </tr>
-          <tr>
-          <td class="tdbis"><a href="./shares.html?share=Pennon Group" title="View factsheet for Pennon Group" class="link-headline">Pennon Group</a></td>
-          <td class="tdbis">1,025.50p</td>
-          <td class="tdbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
-          <td class="tdbis">-1.87%</td>
-          </tr>
-          </tbody></table>
-      </div>
-    </section>
-  </section>
-  </section>
-  <section class="footer">
-  </section>
-  </main>
-
-
-
-  <script src="chartfunctions.js"></script>
-  <script src="functionsCssChange.js"></script>
-
-    </body>
+        </tbody></table>
+        <div class="divShares2" id="container"></div>
+      </section>
+      <section class="risersandfallers">
+        <h2>Risers and fallers</h2>
+      </section>
+      
+      <section>
+        <section class="sectionContenedora">
+          <section class="sectionContenedora2">
+            <h3 class="h3first"><a href="#" onclick="myJsFuncCambiatabal('FTSE100');">FTSE100</a></h3>
+            <h3><a href="#" onclick="myJsFuncCambiatabal('AIM100');">AIM100</a></h3>
+            <h3><a href="#" onclick="myJsFuncCambiatabal('SmallCap');">Small Cap</a></h3>
+          </section>
+          <section class="sectionContenedora2" id="subidabajada">
+            <div id="movers-risers" class="divtopflops">
+              <p class="espaciosubidas"><strong>FTSE 100 risers</strong></a></p>
+              <table class="subidas">
+                <tbody><tr>
+                  <td class="tdbis"><a href="./shares.html?share=Rolls Royce Holdings Plc" title="View factsheet for Rolls Royce Holdings Plc" class="link-headline">Rolls Royce Holdings Plc</a></td>
+                  <td class="tdbis">297.70p</td>
+                  <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+                  <td class="tdbis">+18.32%</td>
+                </tr>
+                <tr class="tdsecondbis">
+                  <td class="tdsecondbis"><a href="./shares.html?share=Melrose Industries plc" title="View factsheet for Melrose Industries plc" class="link-headline">Melrose Industries plc</a></td>
+                  <td class="tdsecondbis">88.72p</td>
+                  <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+                  <td class="tdsecondbis">+17.88%</td>
+                </tr>
+                <tr>
+                  <td class="tdbis"><a href="./shares.html?share=Carnival plc" title="View factsheet for Carnival plc" class="link-headline">Carnival plc</a></td>
+                  <td class="tdbis">721.40p</td>
+                  <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+                  <td class="tdbis">+17.34%</td>
+                </tr>
+                <tr class="tdsecondbis">
+                  <td class="tdsecondbis"><a href="./shares.html?share=Legal &amp; General Group plc" title="View factsheet for Legal &amp; General Group plc" class="link-headline">Legal &amp; General Group plc</a></td>
+                  <td class="tdsecondbis">186.30p</td>
+                  <td class="tdsecondbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+                  <td class="tdsecondbis">+16.66%</td>
+                </tr>
+                <tr>
+                  <td class="tdbis"><a href="./shares.html?share=Barratt Developments plc" title="View factsheet for Barratt Developments plc" class="link-headline">Barratt Developments plc</a></td>
+                  <td class="tdbis">447.40p</td>
+                  <td class="tdbis"><i class="material-icons" style="color:green">arrow_upward</i></td>
+                  <td class="tdbis">+16.42%</td>
+                </tr>
+              </tbody></table>
+            </div>
+            <div id="movers-fallers" class="divtopflops2">
+              <p class="espaciobajadas"><strong>FTSE 100 fallers</strong></a></p>
+              <table class="bajadas">
+                <tbody><tr>
+                  <td class="tdbis"><a href="./shares.html?share=Sainsbury (J) plc" title="View factsheet for Sainsbury (J) plc" class="link-headline">Sainsbury (J) plc</a></td>
+                  <td class="tdbis">206.10p</td>
+                  <td class="tdbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
+                  <td class="tdbis">-3.42%</td>
+                </tr>
+                <tr class="tdsecondbis">
+                  <td class="tdsecondbis"><a href="./shares.html?share=United Utilities Group Plc" title="View factsheet for United Utilities Group Plc" class="link-headline">United Utilities Group Plc</a></td>
+                  <td class="tdsecondbis">826.20p</td>
+                  <td class="tdsecondbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
+                  <td class="tdsecondbis">-2.78%</td>
+                </tr>
+                <tr>
+                  <td class="tdbis"><a href="./shares.html?share=Halma plc" title="View factsheet for Halma plc" class="link-headline">Halma plc</a></td>
+                  <td class="tdbis">1,848.50p</td>
+                  <td class="tdbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
+                  <td class="tdbis">2.17%</td>
+                </tr>
+                <tr class="tdsecondbis">
+                  <td class="tdsecondbis"><a href="./shares.html?share=London Stock Exchange Group plc" title="View factsheet for London Stock Exchange Group plc" class="link-headline">London Stock Exchange Group plc</a></td>
+                  <td class="tdsecondbis">7,064.00p</td>
+                  <td class="tdsecondbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
+                  <td class="tdsecondbis">-1.89%</td>
+                </tr>
+                <tr>
+                  <td class="tdbis"><a href="./shares.html?share=Pennon Group" title="View factsheet for Pennon Group" class="link-headline">Pennon Group</a></td>
+                  <td class="tdbis">1,025.50p</td>
+                  <td class="tdbis"><i class="material-icons" style="color:red">arrow_downward</i></td>
+                  <td class="tdbis">-1.87%</td>
+                </tr>
+              </tbody></table>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section class="footer">
+      </section>
+    </main>
+    
+    
+    
+    <script src="chartfunctions.js"></script>
+    <script src="functionsCssChange.js"></script>
+    
+  </body>
   </html>
