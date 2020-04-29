@@ -601,6 +601,10 @@ table {
   transition-duration: 3s;
 }
 
+.tableindices{
+  width: 29.8%;
+}
+
 .fundamentalsshare{
   align-self: center;
   width: 29.8%;
@@ -618,13 +622,17 @@ table {
 
 .finalshare{
   align-self: auto;
-  width: 34%;
+  width: 34.17%;
   margin-right:2%;
 }
 .finaltables{
-  padding-top: 0px;
+  padding-top: 40px;
   display: flex;
   align-items: stretch;
+}
+.contenedoraGrafica{
+  padding-top: 40px;
+
 }
 
 
