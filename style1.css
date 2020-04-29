@@ -628,7 +628,6 @@ table {
   letter-spacing: 1px;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  transition-duration: 3s;
 }
 
 .tableindices{
@@ -1336,23 +1335,35 @@ h3 {
 }
 
 .divtopflops {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   padding-left: 0vw;
   font-family: Arial, Helvetica, sans-serif;
   min-width: 26.5vw;
   height: 200px;
+  margin-bottom: 60px;
+
 }
 
 .divtopflops2{
-  margin-top: 10px;
   display: flex;
   flex-direction: column;   
-  padding-left: 2vw;
+  padding-left: 0vw;
   font-family: Arial, Helvetica, sans-serif;
   min-width: 26.5vw;
   height: 250px;
 }
+.subidas {
+  align-self: auto;
+  width: 95%;
+}
+
+.bajadas {
+  align-self: auto;
+  width: 95%;
+}
+
 
 
 .separador{
